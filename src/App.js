@@ -11,16 +11,25 @@ const Container = styled.div`
 `;
 
 const WeatherCard = styled.div`
+  position: relative;
   min-width: 360px;
   box-shadow: 0 1px 3px 0 #999999;
   background-color: #f9f9f9;
+  box-sizing: border-box;
+  padding: 30px 15px
+`;
+
+const Location = styled.div`
+  font-size: 28px;
+  color: #212121;
+  margin-bottom: 20px;
 `;
 
 function App() {
   return (
     <Container>
       <WeatherCard>
-        <h1>天氣</h1>
+        <Location>臺北市</Location>
       </WeatherCard>
     </Container>
   );
